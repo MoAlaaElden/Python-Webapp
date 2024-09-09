@@ -1,4 +1,7 @@
 from flask import jsonify, current_app as app
+# psutil (process and system utilities) is a cross-platform library 
+# for retrieving information on running processes and 
+# system utilization (CPU, memory, disks, network, sensors) in Python.
 import psutil
 
 olddata = {}

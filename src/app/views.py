@@ -1,6 +1,6 @@
 from flask import render_template, current_app as app
 
-import cpuinfo
+import cpuinfo # Py-cpuinfo gets CPU info with pure Python
 import psutil
 import platform
 import datetime
@@ -15,6 +15,7 @@ def index():
 def info():
     osinfo = {}
     osinfo["plat"] = platform
+    # get_cpu_info() Returns the CPU info by using the best sources of information for your OS.Returns the result in a dict
     osinfo["cpu"] = cpuinfo.get_cpu_info()
     osinfo["mem"] = psutil.virtual_memory()
     osinfo["net"] = psutil.net_if_addrs()
