@@ -12,7 +12,7 @@ Typical uses would be deployment to Kubernetes, demos of Docker, CI/CD (build pi
 
 # Status
 
-![](https://img.shields.io/github/last-commit/benc-uk/python-demoapp) ![](https://img.shields.io/github/release-date/benc-uk/python-demoapp) ![](https://img.shields.io/github/v/release/benc-uk/python-demoapp) ![](https://img.shields.io/github/commit-activity/y/benc-uk/python-demoapp)
+![](https://img.shields.io/github/last-commit/MoAlaaElden/Python-Webapp) ![](https://img.shields.io/github/release-date/MoAlaaElden/Python-Webapp) ![](https://img.shields.io/github/v/release/MoAlaaElden/Python-Webapp) ![](https://img.shields.io/github/commit-activity/y/MoAlaaElden/Python-Webapp)
 
 Live instances:
 
@@ -31,7 +31,7 @@ Live instances:
 Clone the project to any directory where you do development work
 
 ```
-git clone https://github.com/benc-uk/python-demoapp.git
+git clone https://github.com/MoAlaaElden/Python-Webapp.git
 ```
 
 ### Makefile
@@ -68,12 +68,12 @@ The app runs under Flask and listens on port 5000 by default, this can be change
 
 # Containers
 
-Public container image is [available on GitHub Container Registry](https://github.com/users/benc-uk/packages/container/package/python-demoapp)
+Public container image is [available on Docker Hub Container Registry](https://hub.docker.com/repository/docker/moalaa/python-webapp)
 
 Run in a container with:
 
 ```bash
-docker run --rm -it -p 5000:5000 ghcr.io/benc-uk/python-demoapp:latest
+docker run -d --rm -it -p 5000:5000 moalaa/python-webapp:latest
 ```
 
 Should you want to build your own container, use `make image` and the above variables to customise the name & tag.
