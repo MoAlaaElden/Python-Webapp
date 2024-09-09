@@ -57,8 +57,8 @@ Make file variables and default values, pass these in when calling `make`, e.g. 
 
 | Makefile Variable | Default                |
 | ----------------- | ---------------------- |
-| IMAGE_REG         | ghcr<span>.</span>io   |
-| IMAGE_REPO        | benc-uk/python-demoapp |
+| IMAGE_REG         | docker<span>.</span>io |
+| IMAGE_REPO        | moalaa/Python-Webapp   |
 | IMAGE_TAG         | latest                 |
 | AZURE_RES_GROUP   | temp-demoapps          |
 | AZURE_REGION      | uksouth                |
